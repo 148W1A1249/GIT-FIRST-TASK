@@ -3,7 +3,7 @@ var user_id ="31mxoni6yvsgdwf3cdu7dv4nm3fi";
 var client_id ="3820dc39516a420e98bb54fdb483bbed";
 var client_secret ="6cb3960862f84aa8aff63e9226ff1f17";
 
-var redirect_uri = encodeURI("https://github.com/148W1A1249/GIT-FIRST-TASK/blob/main/index.html");
+var redirect_uri = encodeURI("index.html");
 // http://127.0.0.1:5500/Dom/index.html
 var Authorized = 'https://accounts.spotify.com/authorize';
 var Token = 'https://accounts.spotify.com/api/token';
