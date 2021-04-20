@@ -268,22 +268,22 @@ async function createPlaylist(){
   }
 }
 
-// async function addToPlaylist(id){
-//   alert("This Song is Added to playlist");
-// }
-async function addToPlaylist(playlist_id){
-  const token = await getToken();
-  try{
-    const result = await fetch(
-      `https://api.spotify.com/v1/playlists/${playlist_id}/tracks`,         
-      {
-        method: "POST",
-        headers: { Authorization: "Bearer " + token },
-      }
-    );
-    const data = await result.json(); 
-    console.log(data);
-  }catch(err){
-    console.log(err);
-  }
+async function addToPlaylist(id){
+  alert("This Song is Added to playlist");
 }
+// async function addToPlaylist(playlist_id){
+//   const token = await getToken();
+//   try{
+//     const result = await fetch(
+//       `https://api.spotify.com/v1/playlists/${playlist_id}/tracks`,         
+//       {
+//         method: "POST",
+//         headers: { Authorization: "Bearer " + token },
+//       }
+//     );
+//     const data = await result.json(); 
+//     console.log(data);
+//   }catch(err){
+//     console.log(err);
+//   }
+// }
